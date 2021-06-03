@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="" th:href="@{/styling/style.css}" />
+    <title>Shop</title>
+</head>
+<body>
+
+<div class="container">
+
+    <div class="navbar">
+        <img th:src="@{/img/mnt 1.png}" alt="">
+
+        <div class="navbar-logo">
+            <a th:href="@{'/'}"><h1>Ski Guide</h1></a>
+        </div>
+
+        <ul class="navbar-menu">
+            <li><a th:href="@{'/reserve'}">Reserve now</a></li>
+            <li><a th:href="@{'/login'}">Register</a></li>
+            <li><a th:href="@{'/register'}">Login</a></li>
+            <li><a th:href="@{'/findus'}">Find Us</a></li>
+            <li><a th:href="@{'/shop'}">Shop</a></li>
+            <li><a th:href="@{'/aboutus'}">About Us</a></li>
+            <li><a th:href="@{'/logout'}">Logout</a></li>
+        </ul>
+    </div>
+
+    <div class="shop-content">
+        <div class="shop-content-left">
+            <h1>SHOP NOW</h1>
+            <h2>Ski Equipment</h2>
+            <h2>Snowboard Equipment</h2>
+            <h2>Winter Clothes</h2>
+            <h2>Winter Equipment</h2>
+            <h2>Skipass</h2>
+            <h2>Sales</h2>
+        </div>
+
+        <div class="shop-content-right">
+            <h1>Choose your preference</h1>
+            <div class="shop-content-right-left">
+                <img th:src="@{/img/sn 1.png}" alt="">
+
+            </div>
+            <div class="shop-content-right-right">
+                <img th:src="@{/img/sk 1.png}" alt="">
+
+            </div>
+
+            <h1>Recommendations</h1>
+            <div class="shop-buy">
+                <div th:each="product : ${products}">
+                    <span th:text="${product.id}">id</span>
+                    <span th:text="${product.name}">name</span>
+                    <span th:text="${product.prize}">name</span>
+                    <button type="button" class="btn btn-primary" th:onclick="|add()|">ADD</button>
+                </div>
+                <a th:href="@{'/'}"><button>Buy</button></a>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="footer">
+
+        <div class="footer-left">
+            <p>Email: skiguide@yahoo.com</p>
+            <p>Facebook: Ski Guide</p>
+            <p>Telephone: 07********</p>
+        </div>
+
+        <div class="footer-right">
+            <h3>Follow us:</h3>
+            <a th:href="@{'https://www.instagram.com'}"><img th:src="@{/img/insta.png}" alt=""></a>
+            <a th:href="@{'https://www.facebook.com'}"><img th:src="@{/img/facebook.png}" alt=""></a>
+            <a th:href="@{'https://www.twitter.com'}"><img th:src="@{/img/twitter.png}" alt=""></a>
+            <a th:href="@{'https://www.youtube.com'}"><img th:src="@{/img/youtube.png}" alt=""></a>
+        </div>
+    </div>
+
+
+
+</div>
+
+</body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Shop</title>
+</head>
+<body>
+        <div th:class="header">
+            <nav>
+                <a th:href="@{'/'}">SkiGuide</a>
+                <a th:href="@{'/reserve'}">Reserve Now</a>
+                <a th:href="@{'/login'}">Log in</a>
+                <a th:href="@{'/register'}">Register Now</a>
+                <a th:href="@{'/findus'}">Find Us</a>
+                <a th:href="@{'/shop'}">Shop</a>
+                <a th:href="@{'/aboutus'}">About Us</a>
+                <a th:href="@{'/logout'}">Logout</a>
+            </nav>
+        </div>
+
+        <div>
+            <div th:each="product : ${products}">
+                <span th:text="${product.id}">id</span>
+                <span th:text="${product.name}">name</span>
+                <span th:text="${product.prize}">name</span>
+                <button type="button" class="btn btn-primary" th:onclick="|add()|">ADD</button>
+            </div>
+            <a th:href="@{'/'}"><button>Buy</button></a>
+        </div>
+</body>
+</html> -->

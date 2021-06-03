@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="" th:href="@{/styling/style.css}" />
+    <title>Ski Guide</title>
+</head>
+<body>
+
+<div class="container">
+
+    <div class="navbar">
+        <img th:src="@{/img/mnt 1.png}" alt="">
+
+        <div class="navbar-logo">
+            <a th:href="@{'/'}"><h1>Ski Guide</h1></a>
+        </div>
+
+        <ul class="navbar-menu">
+            <li><a th:href="@{'/reserve'}">Reserve now</a></li>
+            <li><a th:href="@{'/register'}">Register</a></li>
+            <li><a th:href="@{'/login'}">Login</a></li>
+            <li><a th:href="@{'/findus'}">Find Us</a></li>
+            <li><a th:href="@{'/shop'}">Shop</a></li>
+            <li><a th:href="@{'/aboutus'}">About Us</a></li>
+            <li><a th:href="@{'/logout'}">Logout</a></li>
+        </ul>
+    </div>
+
+    <div class="home-content">
+        <div class="home-content-left">
+            <img th:src="@{/img/sn 1.png}" alt="">
+            <h1>LEARN SNOWBOARDING</h1>
+        </div>
+
+        <div class="home-content-center">
+
+            <h2>You want to learn how to ski?</h2>
+            <h2>You want to find the closest instructor?</h2>
+            <h2>You  want to use the best equipements available?</h2>
+            <h2>Are you interested in buying winter related equipments?</h2>
+            <h2>Or you want to take part in a ski camps or different events?</h2>
+            <div class="home-content-center-come">
+                <h2>Come and Join us!</h2>
+               <h1> <a th:href="@{'/reserve'}">Reserve now</a></h1>
+            </div>
+
+        </div>
+
+        <div class="home-content-right">
+            <img th:src="@{/img/sk 1.png}" alt="">
+            <h1>LEARN SKIING</h1>
+        </div>
+    </div>
+
+    <div class="footer">
+
+        <div class="footer-left">
+            <p>Email: skiguide@yahoo.com</p>
+            <p>Facebook: Ski Guide</p>
+            <p>Telephone: 07********</p>
+        </div>
+
+        <div class="footer-right">
+            <h3>Follow us:</h3>
+            <a th:href="@{'https://www.instagram.com'}"><img th:src="@{/img/insta.png}" alt=""></a>
+            <a th:href="@{'https://www.facebook.com'}"><img th:src="@{/img/facebook.png}" alt=""></a>
+            <a th:href="@{'https://www.twitter.com'}"><img th:src="@{/img/twitter.png}" alt=""></a>
+            <a th:href="@{'https://www.youtube.com'}"><img th:src="@{/img/youtube.png}" alt=""></a>
+        </div>
+    </div>
+
+
+
+</div>
+
+</body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>SkiGuide</title>
+</head>
+<body>
+        <div th:class="header">
+            <nav-logo>
+                <img src="logoski.jpg" alt="">
+            </nav-logo>
+            <nav>
+                <a th:href="@{'/'}">SkiGuide</a>
+                <a th:href="@{'/reserve'}">Reserve Now</a>
+                <a th:href="@{'/login'}">Log in</a>
+                <a th:href="@{'/register'}">Register Now</a>
+                <a th:href="@{'/findus'}">Find Us</a>
+                <a th:href="@{'/shop'}">Shop</a>
+                <a th:href="@{'/aboutus'}">About Us</a>
+                <a th:href="@{'/logout'}">Logout</a>
+            </nav>
+        </div>
+
+        <div>
+            <h1>Home</h1>
+        </div>
+        <div>
+            <h3>
+                Don't have an account?
+                <br>
+                <div>
+                    <a th:href="@{'/register'}">Register Now</a>
+                </div>
+            </h3>
+        </div>
+</body>
+</html> -->

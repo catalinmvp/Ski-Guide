@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+    <link rel="stylesheet" href="" th:href="@{/styling/style.css}" />
+</head>
+<body>
+<div class="container">
+
+    <div class="navbar">
+        <img th:src="@{/img/mnt 1.png}" alt="">
+
+        <div class="navbar-logo">
+            <a th:href="@{'/'}"><h1>Ski Guide</h1></a>
+        </div>
+
+        <ul class="navbar-menu">
+            <li><a th:href="@{'/reserve'}">Reserve now</a></li>
+            <li><a th:href="@{'/register'}">Register</a></li>
+            <li><a th:href="@{'/login'}">Login</a></li>
+            <li><a th:href="@{'/findus'}">Find Us</a></li>
+            <li><a th:href="@{'/shop'}">Shop</a></li>
+            <li><a th:href="@{'/aboutus'}">About Us</a></li>
+            <li><a th:href="@{'/logout'}">Logout</a></li>
+        </ul>
+    </div>
+
+    <div class="home-content">
+            <div class="home-content-center">
+                <form action="/register/registersucces" th:action="@{'/register/registersucces'}" method="post">
+
+                <div class="form-element">
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="name" size="40">
+                    </div>
+
+                    <div class="form-element">
+                        <label for="username">Username</label>
+                        <input type="text" name="username" id="username">
+                    </div>
+
+                    <div class="form-element">
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="password">
+                    </div>
+
+                    <div class="form-element">
+                        <label for="rPassword">Repeat password</label>
+                        <input type="password" id="rPassword">
+                    </div>
+
+                    <div class="form-element">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+
+                    <div class="form-element">
+                        <label for="tel">Telephone</label>
+                        <input type="tel" name="tel" id="tel">
+                    </div>
+
+                    <button>Submit</button>
+                </form>
+            </div>
+        </div>
+
+    <div class="footer">
+
+        <div class="footer-left">
+            <p>Email: skiguide@yahoo.com</p>
+            <p>Facebook: Ski Guide</p>
+            <p>Telephone: 07********</p>
+        </div>
+
+        <div class="footer-right">
+            <h3>Follow us:</h3>
+            <a th:href="@{'https://www.instagram.com'}"><img th:src="@{/img/insta.png}" alt=""></a>
+            <a th:href="@{'https://www.facebook.com'}"><img th:src="@{/img/facebook.png}" alt=""></a>
+            <a th:href="@{'https://www.twitter.com'}"><img th:src="@{/img/twitter.png}" alt=""></a>
+            <a th:href="@{'https://www.youtube.com'}"><img th:src="@{/img/youtube.png}" alt=""></a>
+        </div>
+    </div>
+    </div>
+
+
+</body>
+</html>

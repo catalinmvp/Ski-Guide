@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="" th:href="@{/styling/style.css}" />
+    <title>About Us</title>
+</head>
+<body>
+
+<div class="container">
+
+    <div class="navbar">
+        <img th:src="@{/img/mnt 1.png}" alt="">
+
+        <div class="navbar-logo">
+            <a th:href="@{'/'}"><h1>Ski Guide</h1></a>
+        </div>
+
+        <ul class="navbar-menu">
+            <li><a th:href="@{'/reserve'}">Reserve now</a></li>
+            <li><a th:href="@{'/register'}">Register</a></li>
+            <li><a th:href="@{'/login'}">Login</a></li>
+            <li><a th:href="@{'/findus'}">Find Us</a></li>
+            <li><a th:href="@{'/shop'}">Shop</a></li>
+            <li><a th:href="@{'/aboutus'}">About Us</a></li>
+            <li><a th:href="@{'/logout'}">Logout</a></li>
+        </ul>
+    </div>
+
+    <div class="about-content">
+        <h1>About us</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Varius duis at consectetur lorem donec massa sapien faucibus et. Gravida neque convallis a cras semper auctor neque vitae. Vitae suscipit tellus mauris a diam maecenas. Aliquet porttitor lacus luctus accumsan tortor posuere ac ut. Urna id volutpat lacus laoreet non curabitur gravida. Ornare arcu odio ut sem nulla. Risus pretium quam vulputate dignissim suspendisse in est ante. Vitae turpis massa sed elementum tempus egestas sed sed risus. Eget gravida cum sociis natoque. Diam phasellus vestibulum lorem sed risus ultricies. Sed sed risus pretium quam vulputate dignissim suspendisse in. Lacus viverra vitae congue eu consequat ac felis. Sed sed risus pretium quam vulputate dignissim suspendisse in. Suspendisse interdum consectetur libero id faucibus nisl tincidunt. Porttitor rhoncus dolor purus non enim praesent elementum. Hac habitasse platea dictumst quisque sagittis. Amet porttitor eget dolor morbi non arcu risus quis. Mauris in aliquam sem fringilla ut morbi tincidunt augue. A pellentesque sit amet porttitor eget dolor.
+
+            Massa ultricies mi quis hendrerit. Ullamcorper velit sed ullamcorper morbi tincidunt ornare massa. Lectus sit amet est placerat in. Massa ultricies mi quis hendrerit dolor. Vel risus commodo viverra maecenas. Enim sed faucibus turpis in eu mi bibendum. In tellus integer feugiat scelerisque varius morbi enim nunc faucibus. Vestibulum morbi blandit cursus risus at ultrices mi tempus. Nullam vehicula ipsum a arcu cursus vitae. Cum sociis natoque penatibus et magnis dis parturient montes nascetur. Vitae tortor condimentum lacinia quis vel eros donec ac odio. Purus semper eget duis at tellus at. Sed sed risus pretium quam vulputate. Eget felis eget nunc lobortis. Elit duis tristique sollicitudin nibh. Ut tortor pretium viverra suspendisse potenti.
+
+            In arcu cursus euismod quis viverra nibh cras pulvinar mattis. Fermentum dui faucibus in ornare quam viverra. Ipsum dolor sit amet consectetur adipiscing elit duis tristique sollicitudin. Non arcu risus quis varius. Dictumst vestibulum rhoncus est pellentesque elit. Tortor condimentum lacinia quis vel. Aliquet sagittis id consectetur purus ut faucibus pulvinar elementum. Faucibus a pellentesque sit amet porttitor. Pulvinar sapien et ligula ullamcorper malesuada proin. Dolor sit amet consectetur adipiscing elit duis tristique sollicitudin. Cum sociis natoque penatibus et magnis.</p>
+    </div>
+
+    <div class="footer">
+
+        <div class="footer-left">
+            <p>Email: skiguide@yahoo.com</p>
+            <p>Facebook: Ski Guide</p>
+            <p>Telephone: 07********</p>
+        </div>
+
+        <div class="footer-right">
+            <h3>Follow us:</h3>
+            <a th:href="@{'https://www.instagram.com'}"><img th:src="@{/img/insta.png}" alt=""></a>
+            <a th:href="@{'https://www.facebook.com'}"><img th:src="@{/img/facebook.png}" alt=""></a>
+            <a th:href="@{'https://www.twitter.com'}"><img th:src="@{/img/twitter.png}" alt=""></a>
+            <a th:href="@{'https://www.youtube.com'}"><img th:src="@{/img/youtube.png}" alt=""></a>
+        </div>
+    </div>
+
+
+
+</div>
+
+</body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+        <div th:class="header">
+            <nav>
+                <a th:href="@{'/'}">SkiGuide</a>
+                <a th:href="@{'/reserve'}">Reserve Now</a>
+                <a th:href="@{'/login'}">Log in</a>
+                <a th:href="@{'/register'}">Register Now</a>
+                <a th:href="@{'/findus'}">Find Us</a>
+                <a th:href="@{'/shop'}">Shop</a>
+                <a th:href="@{'/aboutus'}">About Us</a>
+                <a th:href="@{'/logout'}">Logout</a>
+            </nav>
+        </div>
+        <div>
+            <h3>
+                About US xdddddddddd
+            </h3>
+        </div>
+</body>
+</html> -->
